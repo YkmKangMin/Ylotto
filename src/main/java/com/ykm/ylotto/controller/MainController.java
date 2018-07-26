@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/main")
 public class MainController {
 
-    @RequestMapping("/hello")
-    public String hello(Model model) {
+    @RequestMapping("/main")
+    public String main(Model model) {
 
         model.addAttribute("name", "SpringBlog from Millky");
 
-        return "hello";
+        return "main";
 
     }
 }
